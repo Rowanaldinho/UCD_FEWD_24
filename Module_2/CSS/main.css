@@ -1,5 +1,5 @@
 body    {
-    background-color: rgb(241, 240, 225);
+    background-color: rgb(218, 59, 54);
 }
 
 h1  	{
@@ -11,3 +11,11 @@ header img  {
     height: auto;
 }
 
+Div     {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border:10px rgb(48, 45, 45);
+    margin: 5px;
+}
