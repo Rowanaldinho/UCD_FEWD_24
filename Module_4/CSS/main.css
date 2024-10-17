@@ -1,0 +1,23 @@
+body    {
+    background-color: rgb(218, 59, 54);
+}
+
+h1  	{
+    color: brown;
+}
+
+header img  {
+    width: 100%;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+Div     {
+    background-color: beige;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border:10px rgb(48, 45, 45);
+    margin: 5px;
+}
