@@ -1,0 +1,9 @@
+body {
+    background: url("Images/christmas-tree-2928142_1920.jpg") no-repeat center center fixed;
+    color: white;
+    background-size: cover;
+}
+
+h1 {
+    color:red;
+}
