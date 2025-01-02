@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <img src="Images/Logo.jpg" alt="Logo" class="logo">
+    Rowanaldinhos Gastro Pub
+  </header>
+  <div class = "main-container">
+    <div class="alcohol-items-container">
+      <table>
+        <thead>
+         <tr>
+          <td colspan="5">
+            Beer/Stout/Cider
+          </td>
+        </tr>
+      </thead>
+      <tr>
+        <td><button onclick="appendToDisplay('5.50'); appendToItemisedList('Guinness')">Guinness
+          €5.50
+        </button></td>
+        <td><button onclick="appendToDisplay('6.10'); appendToItemisedList('Heineken')">Heineken
+          €6.10
+        </button></td>
+        <td><button onclick="appendToDisplay('6.15'); appendToItemisedList('Carlsberg')">Carlsberg
+          €6.15
+        </button></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendToDisplay('5.90'); appendToItemisedList('Budweiser')">Budweiser
+          €5.90
+        </button></td>
+        <td><button onclick="appendToDisplay('6.00'); appendToItemisedList('Moretti')">Moretti
+          €6.00
+        </button></td>
+        <td><button onclick="appendToDisplay('6.10'); appendToItemisedList('Coors Light')">Coors Light
+          €6.10
+        </button></td>
+        <td><button class="Pint" onclick="appendToDisplay('*1'); appendToItemisedList('- Pint')">Pint
+        </button></td>
+        <td><button class="Glass" onclick="appendToDisplay('*.6'); appendToItemisedList('- Glass')">Glass
+        </button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendToDisplay('5.50'); appendToItemisedList('Bulmers')">Bulmers
+          €5.50
+        </button></td>
+        <td><button onclick="appendToDisplay('6.10'); appendToItemisedList('Orchard Thieves')">Orchard Thieves
+          €6.10
+        </button></td>
+        <td><button onclick="appendToDisplay('6.15'); appendToItemisedList('Rockshore Cider')">Rockshore Cider
+          €6.15
+        </button></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <hr>
+    <table>
+      <thead>
+        <tr>
+          <td>Spirits</td>
+        </tr>
+      </thead>
+      <tr>
+        <td><button onclick="appendToDisplay('5.50'); appendToItemisedList('Jameson Whiskey')">Jameson Whiskey
+          €5.50
+        </button></td>
+        <td><button onclick="appendToDisplay('6.10'); appendToItemisedList('Smirnoff Vodka')">Smirnoff Vodka
+          €6.10
+        </button></td>
+        <td><button onclick="appendToDisplay('6.15'); appendToItemisedList('Captain Morgans')">Captain Morgans
+          €6.15
+        </button></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendToDisplay('5.50'); appendToItemisedList('Gordons Gin')">Gordons Gin
+          <br>€5.50
+        </button></td>
+        <td><button onclick="appendToDisplay('6.10'); appendToItemisedList('Hennessy Cognac')">Hennessy Cognac
+          €6.10
+        </button></td>
+        <td><button onclick="appendToDisplay('6.15'); appendToItemisedList('Black & White')">Black & White
+          €6.15
+        </button></td>
+        <td><button class="Single" onclick="appendToDisplay('*1'); appendToItemisedList('- Single')">Single
+        </button></td>
+        <td><button class="Double" onclick="appendToDisplay('*2'); appendToItemisedList('- Double')">Double
+        </button></td>
+      </tr>
+    </table>
+    <hr>
+    <table>
+      <thead>
+        <tr>
+          <td>Wine</td>
+        </tr>
+      </thead>
+      <tr>
+        <td><button onclick="appendToDisplay('5.50'); appendToItemisedList('Prosecco')">Prosecco
+          €5.50
+        </button></td>
+        <td><button onclick="appendToDisplay('6.10'); appendToItemisedList('Pinot Grigio')">Pinot Grigio
+          €6.10
+        </button></td>
+        <td><button onclick="appendToDisplay('6.15'); appendToItemisedList('Sauvignon Blanc')">Sauvignon Blanc
+          €6.15
+        </button></td>
+        <td><button class="Regular" onclick="appendToDisplay('*1'); appendToItemisedList('- Regular')">Regular
+        </button></td>
+        <td><button class="Large" onclick="appendToDisplay('*1.5'); appendToItemisedList('- Large')">Large
+        </button></td>
+      </tr>
+    </table>
+  </div>
+  <div class="display-container">
+      <input id="calculator-display" readonly>
+      <textarea id ="display-items" readonly></textarea>
+    <div class="buttons-calculator";>
+      <table>
+        <tr>
+          <td><button onclick="clearDisplay()">C</button></td>
+          <td><button onclick="appendToDisplay('+'); appendToItemisedList(' +')">+
+          </button></td>
+          <td><button onclick="appendToDisplay('-'); appendToItemisedList(' -')">-
+          </button></td>
+          <td><button onclick="appendToDisplay('*'); appendToItemisedList(' x')">x
+          </button></td>
+          <td><button onclick="appendToDisplay('/'); appendToItemisedList(' /')">/
+          </button></td>
+          <td><button onclick="calculate()">=</button></td>
+        </tr>
+        <tr>
+          <td><button id="backspace" onclick="backspace()">Backspace</button></td>
+          <td><button onclick="appendToDisplay('1'); appendToItemisedList('  1')">1
+          </button></td>
+          <td><button onclick="appendToDisplay('2'); appendToItemisedList('  2')">2
+          </button></td>
+          <td><button onclick="appendToDisplay('3'); appendToItemisedList('  3')">3
+          </button></td>
+          <td><button onclick="appendToDisplay('0'); appendToItemisedList('  0')">0
+          </button></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button onclick="appendToDisplay('4'); appendToItemisedList('  4')">4
+          </button></td>
+          <td><button onclick="appendToDisplay('5'); appendToItemisedList('  5')">5
+          </button></td>
+          <td><button onclick="appendToDisplay('6'); appendToItemisedList('  6')">6
+          </button></td>
+          <td><button onclick="appendToDisplay('00'); appendToItemisedList('  00')">00
+          </button></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button onclick="appendToDisplay('7'); appendToItemisedList('  7')">7
+          </button></td>
+          <td><button onclick="appendToDisplay('8'); appendToItemisedList('  8')">8
+          </button></td>
+          <td><button onclick="appendToDisplay('9'); appendToItemisedList('  9')">9
+          </button></td>
+          <td><button onclick="appendToDisplay('.'); appendToItemisedList('  .')">.
+          </button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="JS/main.js"></script>
+</body>
+</html>
