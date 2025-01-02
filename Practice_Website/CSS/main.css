@@ -1,0 +1,113 @@
+h1 { 
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 102, 65);
+  height: 100px;
+  color: white;
+  margin-top: 30px;
+}
+
+header img.logo {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position:absolute;
+  left: 30px;
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  text-align: left;
+  margin: 0;
+}
+
+header h4 {
+  margin:0;
+}
+  
+nav { 
+  background-color: #004d40; /* Dark green background */ 
+  padding: 10px 0; /* Vertical padding */ 
+} 
+  
+nav ul { 
+  list-style: none; /* Remove bullet points */ 
+  padding: 0; /* Remove default padding */ 
+  margin: 0; /* Remove default margin */ 
+  display: flex; /* Use flexbox for horizontal layout */ 
+  justify-content: center; /* Center the nav items */ 
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+} 
+
+nav ul li { 
+  margin: 0 15px; /* Horizontal spacing between links */ 
+} 
+
+nav ul li a { 
+  color: gold; /* White text color */   
+  text-decoration: none; /* Remove underline */ 
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 18px; /* Increase font size */ 
+  padding: 5px 10px; /* Add padding to links */ 
+  transition: background-color 0.3s; /* Smooth background color transition */ 
+} 
+
+nav ul li a:hover { 
+  background-color: #00796b; /* Change background on hover */ 
+}
+
+footer { 
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: white; 
+  padding: 20px 0; 
+} 
+
+.footer-container { 
+  display:flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  max-width: 1200px; 
+  margin: auto; 
+  padding: 0 20px; 
+} 
+
+.footer-column { 
+  flex: 1; 
+  min-width: 200px; 
+  margin: 10px; 
+} 
+
+.footer-column h4 { 
+  margin-bottom: 10px; 
+} 
+
+.footer-column ul { 
+  list-style: none; 
+  padding: 0; 
+} 
+
+.footer-column ul li { 
+  margin-bottom: 5px; 
+} 
+
+.footer-column ul li a { 
+  color: white !important; 
+  text-decoration:none; 
+  transition: color 0.3s; 
+} 
+
+.footer-column ul li a:hover { 
+  color: #00796b; 
+}

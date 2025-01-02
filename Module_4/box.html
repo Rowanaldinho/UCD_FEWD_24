@@ -28,6 +28,60 @@
             background-color: yellow;
         }
 
+        .container { 
+            width: 100%; 
+            height: 2000px; 
+            padding: 20px; 
+            border: 1px solid #000; 
+            position: relative; /* For absolute positioning within it */ 
+        } 
+        .relative-box, .absolute-box, .fixed-box, .sticky-box { 
+            width: 100px; 
+            height: 100px; 
+            margin: 10px; 
+            padding: 10px; 
+            border: 2px solid #333; 
+        } 
+        
+        .relative-box { 
+            position: relative; 
+            top: 10px; 
+            left: 20px; 
+        } 
+        .absolute-box { 
+            position: absolute; 
+            top: 50px; 
+            right: 20px; 
+        } 
+        
+        .fixed-box { 
+            position: fixed; 
+            bottom: 20px; 
+            left: 20px; 
+        } 
+        
+        .sticky-box { 
+            position: sticky; 
+            top: 10px; 
+            background-color: lightyellow;
+        }
+
+        .float-box-left {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .float-box-right {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            float: right;
+            margin-right: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -35,12 +89,29 @@
     <p>New Zealand have been dealt a double blow ahead of Friday's clash with Ireland at Aviva Stadium, with Beauden Barrett and Codie Taylor both ruled out of the World Cup quarter-final rematch due to concussion.</p>
     <p>The pair suffered head injuries during yesterdays 24-22 win against England, with head coach Scott Robertson already confirming they would miss the trip to Dublin, given they are dealing with a six-day turnaround.</p>
     <p>Meanwhile, Ireland are continuing their training camp in Portugal where they have been joined by Peter O’Mahony, who now looks well in contention for a place in Andy Farrells matchday squad.</p>
+
+    <div class="float-box-right">Float Box Right</div>
+    <p>Meanwhile, Ireland are continuing their training camp in Portugal where they have been joined by Peter O’Mahony, who now looks well in contention for a place in Andy Farrells matchday squad.</p>
+    <div class="float-box-left">Float Box Left</div>
+
+    <p>Meanwhile, Ireland are continuing their training camp in Portugal where they have been joined by Peter O’Mahony, who now looks well in contention for a place in Andy Farrells matchday squad.</p>
+
+    <p>Meanwhile, Ireland are continuing their training camp in Portugal where they have been joined by Peter O’Mahony, who now looks well in contention for a place in Andy Farrells matchday squad.</p>
+
+    <p>Meanwhile, Ireland are continuing their training camp in Portugal where they have been joined by Peter O’Mahony, who now looks well in contention for a place in Andy Farrells matchday squad.</p>
     
     <div class="box2">
         <p>Box 2</p>
         </div>
 
+        <p>Meanwhile, Ireland are continuing their training camp in Portugal where they have been joined by Peter O’Mahony, who now looks well in contention for a place in Andy Farrells matchday squad.</p>
 
+    <div class="container"> 
+        <div class="relative-box">Relative Box</div> 
+        <div class="absolute-box">Absolute Box</div> 
+        <div class="fixed-box">Fixed Box</div> 
+        <div class="sticky-box">Sticky Box</div> 
+    </div>
         
 </body>
 </html>
