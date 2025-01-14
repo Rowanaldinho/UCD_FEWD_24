@@ -1,0 +1,140 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 	Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  color: bisque;
+  text-align: center;
+}
+
+header .logo { 
+  margin-right: 20px; 
+  width: 300px; 
+  height: auto; 
+}
+
+body {
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+ .main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; 
+  }
+
+  .alcohol-items-container {
+    margin: 20px;
+    display: block;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ffff;
+  }
+
+  .display-container {
+    width: 50%;
+    border: 1px solid #ffff;
+    padding: 20px;
+    margin:20px;
+    display:flexbox;
+    align-items: left;
+  }
+
+  .buttons-calculator {
+    margin: 20px;
+  }
+
+  .buttons-calculator button {
+    font-size: large;
+    width: 80px;
+    height: 60px;
+  }
+
+  button#backspace {
+    font-size:small;
+  }
+
+  input#calculator-display {
+    margin:20px;
+    width: 90%;
+    height: 60px;
+    font-size: xx-large;
+  }
+
+  textarea#display-items {
+    margin:20px;
+    width: 90%;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  button {
+    background-color: bisque;
+    width: 100px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius:15px; 
+    transition: background-color 0.3s ease;
+    font-size:large;
+  }
+
+  button:hover {
+    background-color: rgb(196, 255, 219);
+    font-weight: bold;
+  }
+
+  button.Pint {
+    background-color: green;
+    color:white;
+    width: 80px;
+    height: 60px;
+  }
+
+  button.Glass {
+    background-color: Orange;
+    color:white;
+    width: 80px;
+    height: 60px;
+  }
+
+  button.Single {
+    background-color: green;
+    color:white;
+    width: 80px;
+    height: 60px;
+  }
+
+  button.Double {
+    background-color: orange;
+    color:white;
+    width: 80px;
+    height: 60px;
+  }
+
+  button.Regular {
+    background-color: green;
+    color:white;
+    width: 80px;
+    height: 60px;
+  }
+
+  button.Large {
+    background-color: orange;
+    color:white;
+    width: 80px;
+    height: 60px;
+  }
+
+ .alcohol-items-container thead {
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }

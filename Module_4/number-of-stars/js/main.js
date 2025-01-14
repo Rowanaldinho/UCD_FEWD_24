@@ -8,7 +8,7 @@ numberOfStars = prompt("Enter the number of stars?");
 
 // check that user entered a number and that it is greater than zero
 // otherwise ask user to enter another number
-while(isNaN(numberOfStars)||numberOfStars<=0){
+while(isNaN(numberOfStars)||numberOfStars<=0 ||numberOfStars >=20){
     alert("You did not enter a prompt greater than zero.");
     numberOfStars=prompt("Enter a number greater than zero?");
 }
