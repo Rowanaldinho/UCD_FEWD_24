@@ -1,0 +1,164 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgb(9, 66, 92);
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+  
+.nav-column {
+  color: white;
+  text-align: center;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  width: 100%;
+  height: 400px;
+}
+  
+.header-image {
+  width:100vw;
+  height:100%;
+}
+  
+.nav-column:hover {
+  background-color: rgb(6, 25, 59);
+  cursor: pointer;  
+}
+
+
+body {
+  margin:0;
+  padding:0;
+  background-color: white;
+}
+
+.container_card {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color:  #f0f0f0;
+}
+
+.box_card {
+  background-color: rgb(9, 66, 92);
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.card-image { 
+  width: 100%;
+  height:400px; 
+  object-fit: scale-down; 
+}
+
+.description_container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color:  #f0f0f0;
+}
+
+.description_card {
+  background-color:white;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+  padding:10px;
+}
+
+.top5_container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  background-color:  #f0f0f0;
+}
+
+.top5_card {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+Footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  background-color: rgb(9, 66, 92);
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+  
+
+table {
+  justify-self: center;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid lightgrey;
+}
+  
+th, td {
+  text-align: left;
+}
+  
+td {
+  width:50%;
+}
+  
+tr:nth-child(even) { 
+  background-color: #f9f9f9;
+}
+  
+tr:nth-child(1), td:nth-child(1) {
+  width: 20%;
+}
+
+@media (max-width: 1400px) {
+  .box_card {
+    font-size: 1.5em;
+    height:250px;
+    align-items: flex-start;
+  }
+  .card-image {
+    height:200px;
+  }
+  .description_card {
+    height: 300px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .box_card {
+    font-size: 1em;
+    height:230px;
+    align-items: flex-start;
+  }
+  .card-image {
+    height:200px;
+  }
+  .description_card {
+    height: 550px;
+  }
+}
