@@ -111,3 +111,8 @@ footer {
 .footer-column ul li a:hover { 
   color: #00796b; 
 }
+
+a {
+  text-decoration: none !important;
+  color: white;
+}

@@ -1,6 +1,6 @@
 .card {
     column-count: 3;
-    padding: 10px;
+    column-gap: 20px;
     height: auto;
         }
 
