@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 9 Demo - Swiper Slider</title>
+  <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/Module_10/exercise-2-slideshow/css/swiper_styles.css"
+</head>
+<body>
+  <h1>Unit 9 Demo - Swiper Slider</h1>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="Images/golf.webp" alt="Golf" />
+            <div class="image-text">
+              <h3>Golf</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/id3.png" alt="ID.3" />
+            <div class="image-text">
+              <h3>ID.3</h3>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="Images/id5.webp" alt="ID.5" />
+            <div class="image-text">
+              <h3>ID.5</h3>
+            </div>
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+  <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+  <script>
+     // Initialize Swiper
+     var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // Other configurations can be added here
+        });
+  </script>
+</body>
+</html>
